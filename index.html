@@ -1,99 +1,65 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Presidencia de la República</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <title>Presidential Website</title>
   <style>
     body {
-      background-color: #ffffff;
-      font-family: 'Roboto', sans-serif;
+      background-color: #f0f8ff;
+      font-family: Arial, sans-serif;
       text-align: center;
       padding: 50px;
-      color: #333;
-      margin: 0;
-    }
-
-    header {
-      background-color: #006847;
-      color: white;
-      padding: 30px 20px;
     }
 
     h1 {
+      color: #2a52be;
       font-size: 40px;
-      margin: 0;
-    }
-
-    h2 {
-      font-size: 28px;
-      color: #006847;
-      margin-top: 40px;
     }
 
     p {
-      font-size: 18px;
-      color: #444;
+      color: #228b22;
+      font-size: 20px;
     }
 
-    section {
-      margin: 40px auto;
-      padding: 20px;
-      max-width: 600px;
-      background-color: #f9f9f9;
-      border-radius: 10px;
-      border: 1px solid #ccc;
+    form {
+      margin-top: 40px;
     }
 
     input, textarea {
-      width: 100%;
+      width: 80%;
       padding: 10px;
       margin: 10px 0;
-      border-radius: 5px;
-      border: 1px solid #aaa;
       font-size: 16px;
     }
 
     button {
-      background-color: #006847;
-      color: white;
       padding: 10px 20px;
-      font-size: 16px;
+      font-size: 18px;
+      background-color: #2a52be;
+      color: white;
       border: none;
-      border-radius: 5px;
       cursor: pointer;
     }
 
-    footer {
-      background-color: #ce1126;
-      color: white;
-      padding: 15px;
-      position: fixed;
-      width: 100%;
-      bottom: 0;
-      left: 0;
+    button:hover {
+      background-color: #1d3d9e;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>Presidencia de la República</h1>
-  </header>
+  <h1>Welcome to My Website!</h1>
+  <p>This is my very first webpage.</p>
 
-  <p>Bienvenidos a mi sitio oficial como presidente virtual.</p>
+  <h2>Contact the President</h2>
+  <form action="https://formsubmit.co/presidencialagenciadenoticias@gmail.com" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required><br>
+    <input type="email" name="email" placeholder="Your Email" required><br>
+    <textarea name="message" placeholder="Write your message here..." required></textarea><br>
+    <button type="submit">Send Message</button>
+  </form>
 
-  <!-- Inbox Contact Form -->
-  <h2>Envíame un Mensaje</h2>
-  <section>
-    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-      <input type="text" name="name" placeholder="Tu nombre" required>
-      <input type="email" name="email" placeholder="Tu correo electrónico" required>
-      <textarea name="message" rows="5" placeholder="Tu mensaje" required></textarea>
-      <button type="submit">Enviar Mensaje</button>
-    </form>
-    <p><em>Los mensajes serán enviados directamente a tu correo.</em></p>
-  </section>
+</body>
+</html>
 
   <footer>
     © 2025 Gobierno de México - Sitio Oficial
